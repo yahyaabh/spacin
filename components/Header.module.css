@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.light {
+  color: #a296ca;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  position: relative;
+  margin: 1rem;
+  list-style: none;
+  font-size: 1.25rem;
+  background-color: white;
+  color: black;
+  padding: 0.75rem;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px black solid;
+}
+
+.item:before {
+  transition: all 0.3s ease;
+  content: "";
+  background-color: #a296ca;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+  opacity: 0.3;
+}
+
+.item:hover:before {
+  transition: all 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+}
