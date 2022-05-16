@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0";
-function Header() {
+function header() {
   const { user, isLoading, error } = useUser();
   return (
     <div className={styles.navbar}>
