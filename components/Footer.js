@@ -5,7 +5,7 @@ import { DiGithubBadge } from "react-icons/di";
 import { FiTwitter } from "react-icons/fi";
 import { SiGmail, SiLua } from "react-icons/si";
 import Link from "next/link";
-function footer() {
+function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.cont}>

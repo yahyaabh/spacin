@@ -2,7 +2,7 @@ import Image from "next/image";
 import space from "../images/space.jpg";
 import styles from "./Content.module.css";
 import Link from "next/link";
-function content() {
+function Content() {
   return (
     <div className={styles.content}>
       <div className={styles.text}>
