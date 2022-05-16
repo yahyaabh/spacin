@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react/cjs/react.development";
 import Space from "../components/Space";
 
-function Main({ image }) {
+function main({ image }) {
   const [mars, setMars] = useState([]);
   useEffect(() => {
     async function fetchData() {

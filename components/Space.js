@@ -41,3 +41,6 @@ function Space({ image, mars }) {
 }
 
 export default Space;
+
+//first im going to add all the things that should be added like env and this
+//then im gonna upload to new github and then to new vercel
