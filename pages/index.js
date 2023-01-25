@@ -21,3 +21,5 @@ export default function Home() {
     </div>
   );
 }
+//this is the first page that the user sees
+// contains th components HEADER ; CONTENT ; FOOTER.

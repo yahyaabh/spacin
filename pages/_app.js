@@ -10,3 +10,5 @@ export default function MyApp({ Component, pageProps }) {
     </UserProvider>
   );
 }
+
+//next js setup , provider for auth0

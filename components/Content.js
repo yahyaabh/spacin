@@ -10,9 +10,10 @@ function Content() {
           This is <span className={styles.purple}>spacin</span>
         </h1>
         <p>
-          welcome to <span className={styles.purple}>spacin</span>, here you can
-          find everything you need to know about space, sign in to our website
-          to know everything about this magical world.
+          welcome to <span className={styles.purple}>spacin</span>, with our
+          simple website ,you can discover amazing things which we get from
+          nasa's official database and we display it in form of pictures and
+          text.
           <br></br>
           <br></br>
           <span className={styles.go}>

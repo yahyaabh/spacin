@@ -12,12 +12,14 @@ function Footer() {
         <div className={styles.text}>
           <h1>about us</h1>
           <p>
-            <span className={styles.purple}>spacin</span> is built for users who
-            like to know about space, we get our information from trusted&nbsp;
+            <span className={styles.purple}>this site</span> is built with next
+            js , and we give credits to nasa for providing us with the
+            data&nbsp;
             <a className={styles.a} href="https://www.nasa.gov/">
-              sources
+              here
             </a>
-            , so if you like space, sign in.
+            , and if you like our work check the section below for our
+            information.
           </p>
         </div>
         <Image
@@ -28,32 +30,34 @@ function Footer() {
           height={350}
         />
       </div>
-      <ul className={styles.links}>
-        <li>
-          <Link href="https://github.com/yahyaabh">
-            <a target="_blank" className={styles.link}>
-              <DiGithubBadge className={styles.icon} />
-              &nbsp; GITHUB
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="https://twitter.com/Yahya_abh">
-            <a target="_blank" className={styles.link}>
-              <FiTwitter />
-              &nbsp; TWITTER
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="mailto:yehia.abu.alhassan.01@gmail.com">
-            <a target="_blank" className={styles.link}>
-              <SiGmail />
-              &nbsp; EMAIL
-            </a>
-          </Link>
-        </li>
-      </ul>
+      <div className={styles.linkcont}>
+        <ul className={styles.links}>
+          <li>
+            <Link href="https://github.com/yahyaabh">
+              <a target="_blank" className={styles.link}>
+                <DiGithubBadge className={styles.icon} />
+                &nbsp; GITHUB
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://twitter.com/Yahya_abh">
+              <a target="_blank" className={styles.link}>
+                <FiTwitter />
+                &nbsp; TWITTER
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="mailto:yehia.abu.alhassan.01@gmail.com">
+              <a target="_blank" className={styles.link}>
+                <SiGmail />
+                &nbsp; EMAIL
+              </a>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

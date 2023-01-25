@@ -18,17 +18,6 @@ function Space({ image, mars }) {
               height={500}
             />
           </div>
-          <div method="get" className={styles.form}>
-            <p>
-              this section contains random photos taken from nasa rovers
-              (curiosity) on mars
-            </p>
-            <div className={styles.mars}>
-              {mars.map((e) => (
-                <img className={styles.img1} src={e} />
-              ))}
-            </div>
-          </div>
         </div>
       ) : (
         <a href="/api/auth/login" className={styles.a}>

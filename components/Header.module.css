@@ -9,6 +9,7 @@
   font-weight: bold;
   font-size: 2.5rem;
 }
+
 .light {
   color: #a296ca;
 }
@@ -30,6 +31,27 @@
   border-radius: 5px;
   overflow: hidden;
   border: 1px black solid;
+}
+
+@media (max-width: 465px) {
+  .item {
+    margin: 5px;
+  }
+}
+@media (max-width: 421px) {
+  .item {
+    margin: 1px;
+  }
+}
+@media (max-width: 406px) {
+  .item {
+    padding: 0.25rem;
+  }
+}
+@media (max-width: 373px) {
+  .item {
+    font-size: 1rem;
+  }
 }
 
 .item:before {

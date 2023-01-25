@@ -25,6 +25,32 @@
   font-size: 1.5rem;
 }
 
+@media (max-width: 557px) {
+  .text h1 {
+    font-size: 2rem;
+  }
+  .text p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .text h1 {
+    font-size: 1.5rem;
+  }
+  .text p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 353px) {
+  .text h1 {
+    font-size: 1.25rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}
+
 .img {
   border-radius: 7px;
 }

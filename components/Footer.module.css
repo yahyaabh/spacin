@@ -1,6 +1,7 @@
 .footer {
   height: 100vh;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 5%;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -13,12 +14,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 80vh;
+  width: 90%;
+  height: 80%;
 }
 
 .text {
   width: 30rem;
+  margin: 2%;
 }
 
 .text h1 {
@@ -34,7 +36,17 @@
   font-size: 1.5rem;
 }
 
+@media (max-width: 500px) {
+  .text h1 {
+    font-size: 2rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}
+
 .img {
+  position: relative;
   border-radius: 7px;
 }
 
@@ -48,12 +60,13 @@
   color: white;
   font-weight: bold;
 }
-
-.links {
+.linkcont {
   width: 100%;
-  height: 20vh;
+  height: 20%;
+}
+.links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: white;
   list-style: none;
