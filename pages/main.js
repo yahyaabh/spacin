@@ -20,8 +20,6 @@ function main({ image }) {
 
       const data = await res1.json();
 
-      console.log(data);
-
       const allPhotos = data.photos.map((e) => e.img_src);
 
       const fourPhotos = allPhotos.slice(0, 4);
@@ -38,7 +36,6 @@ function main({ image }) {
   const handleChange = async (event) => {
     event.preventDefault();
     setCam(event.target.value);
-    console.log(cam);
   };
 
   //DISPLAY ON MAIN PAGE
@@ -51,7 +48,7 @@ function main({ image }) {
       {user ? (
         <div>
           <Space image={image} />
-          <div class="rovers">
+          <div className="rovers">
             <h1>curiosity rover camera</h1>
             <p>
               cursiosity is a rover sent by nasa to mars, choose a number which
@@ -62,12 +59,12 @@ function main({ image }) {
               (please note that on some sol you may not find pictures and that
               is because the cameras dont work all the time)
             </p>
-            <form onSubmit={solSub} class="input-form">
+            <form onSubmit={solSub} className="input-form">
               <input id="sol" name="sol" type="number"></input>
               <button type="submit">enter</button>
             </form>
 
-            <div class="cams">
+            <div className="cams">
               <p>
                 cursiosity also has more than one camera ,choose the camera:
               </p>
@@ -84,17 +81,17 @@ function main({ image }) {
               </select>
             </div>
 
-            <div class="photos">
+            <div className="photos">
               {mars.map((e) => (
-                <img class="photo" src={e} />
+                <img key={e} className="photo" src={e} />
               ))}
             </div>
           </div>
         </div>
       ) : (
-        <a href="/api/auth/login" class="a">
+        <a href="/api/auth/login" className="a">
           <h1>please log in first to access this page</h1>
-          <li class="item">login</li>
+          <li className="item">login</li>
         </a>
       )}
     </div>
