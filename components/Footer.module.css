@@ -70,6 +70,7 @@
   align-items: center;
   color: white;
   list-style: none;
+  padding: 0px;
 }
 .link {
   padding: 10px;
