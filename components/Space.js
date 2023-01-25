@@ -1,7 +1,6 @@
 import styles from "./Space.module.css";
 import Image from "next/image";
-import { lazy } from "react/cjs/react.production.min";
-import { useState } from "react/cjs/react.development";
+
 import { useUser } from "@auth0/nextjs-auth0";
 function Space({ image, mars }) {
   const { user, isLoading, error } = useUser();

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import Space from "../components/Space";
 import { useUser } from "@auth0/nextjs-auth0";
 
