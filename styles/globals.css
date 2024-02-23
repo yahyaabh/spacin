@@ -23,6 +23,7 @@ body {
   color: aliceblue;
   text-align: center;
 }
+
 .rovers h1 {
   text-align: center;
   text-decoration: underline;
@@ -101,7 +102,7 @@ body {
 .cams select {
   background-color: black;
   color: white;
-  width: 10%;
+  width: 30%;
   padding: 1%;
   font-size: large;
   border-radius: 15px;

@@ -51,13 +51,10 @@ function main({ image }) {
           <div className="rovers">
             <h1>curiosity rover camera</h1>
             <p>
-              cursiosity is a rover sent by nasa to mars, choose a number which
-              is called sol, and sol is the number of days curiosity has been on
-              mars .
+              cursiosity is a rover sent by nasa to mars, choose a number that indicates the age of the rover.
             </p>
             <p id="note">
-              (please note that on some sol you may not find pictures and that
-              is because the cameras dont work all the time)
+              (please note some numbers don't work)
             </p>
             <form onSubmit={solSub} className="input-form">
               <input id="sol" name="sol" type="number"></input>
@@ -66,7 +63,7 @@ function main({ image }) {
 
             <div className="cams">
               <p>
-                cursiosity also has more than one camera ,choose the camera:
+                choose the  name of the camera:
               </p>
               <select value={cam} onChange={handleChange}>
                 <option value="fhaz">fhaz</option>
