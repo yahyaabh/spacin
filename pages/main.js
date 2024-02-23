@@ -51,7 +51,8 @@ function main({ image }) {
           <div className="rovers">
             <h1>curiosity rover camera</h1>
             <p>
-              cursiosity is a rover sent by nasa to mars, choose a number that indicates the age of the rover.
+              cursiosity is a rover sent by nasa to mars
+              Choose a number between 1 and 4000 that indicates the age of the rover, and choose any camera.
             </p>
             <p id="note">
               (please note some numbers don't work)
@@ -62,9 +63,7 @@ function main({ image }) {
             </form>
 
             <div className="cams">
-              <p>
-                choose the  name of the camera:
-              </p>
+              
               <select value={cam} onChange={handleChange}>
                 <option value="fhaz">fhaz</option>
                 <option value="rhaz">rhaz</option>
@@ -77,7 +76,7 @@ function main({ image }) {
                 <option value="minites">minites</option>
               </select>
             </div>
-            
+
           {mars.length != 0?
             <div className="photos">
               {mars.map((e) => (
