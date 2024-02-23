@@ -77,12 +77,18 @@ function main({ image }) {
                 <option value="minites">minites</option>
               </select>
             </div>
-
+            
+          {mars.length != 0?
             <div className="photos">
               {mars.map((e) => (
                 <img key={e} className="photo" src={e} />
               ))}
             </div>
+            :
+            <div className="photos">
+              <p>no results</p>
+              </div>
+      }
           </div>
         </div>
       ) : (
